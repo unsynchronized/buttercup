@@ -1,0 +1,39 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "buttercup",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+            "name": "ButtercupIntent",
+            "slots": [
+            {
+                "name": "Query",
+                "type": "AMAZON.SearchQuery"
+            }
+            ],
+            "samples": [
+                "repeat {Query}"
+            ]
+        },
+        {
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello"
+          ]
+        }
+      ]
+    }
+  }
+}
