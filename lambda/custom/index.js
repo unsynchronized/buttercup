@@ -24,7 +24,7 @@ const ButtercupIntentHandler = {
       && handlerInput.requestEnvelope.request.intent.name === 'ButtercupIntent';
   },
   handle(handlerInput) {
-    const speechText = 'Hello Buttercup! ' + handlerInput.requestEnvelope.request.intent.slots['Query'].value;
+    const speechText = handlerInput.requestEnvelope.request.intent.slots['Query'].value;
 
     return handlerInput.responseBuilder
       .speak(speechText)
